@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
   validates :name, presence: true
   validates :email, uniqueness: true
-  # validate :
+  validates :phone, length: {minimum: 10}
 end
