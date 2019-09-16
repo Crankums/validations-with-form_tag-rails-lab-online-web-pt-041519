@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  validate :name, presence: true
-  validate :email, uniqueness: true
+  validates :name, presence: true
+  validates :email, uniqueness: true
   # validate :
 end
